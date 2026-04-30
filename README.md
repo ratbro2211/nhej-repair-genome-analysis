@@ -2,24 +2,24 @@
 Large-scale analysis of NHEJ repair systems and their association with GC content across bacterial genomes.
 # 🧬 GC Content and Evolution of NHEJ Repair Systems in Bacteria
 
-## 📌 Overview
+## Overview
 This project investigates the distribution and evolution of bacterial Non-Homologous End Joining (NHEJ) DNA repair systems and their association with genomic GC content. The study integrates large-scale genomic datasets with multiple computational approaches to identify repair domains, map them onto phylogeny, and analyze compositional trends.
 
 ---
 
-## 🎯 Research Objective
+## Research Objective
 The primary goal of this study is to understand the biological and evolutionary factors contributing to GC content diversity in bacterial genomes, with a particular focus on the role of DNA repair systems such as NHEJ.
 
 ---
 
-## 🔬 Key Questions
+## Key Questions
 - Is the presence of NHEJ components (Ku and LigD) associated with GC-rich genomes?
 - How are DNA repair systems distributed across bacterial phylogeny?
 - Can large-scale datasets provide more robust insights compared to previous studies?
 
 ---
 
-## 📊 Methodology Overview
+## Methodology Overview
 
 The analysis pipeline consists of the following steps:
 
@@ -46,7 +46,7 @@ The analysis pipeline consists of the following steps:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 nhej-repair-genome-analysis/
 │
 ├── data/ # Raw and processed datasets
@@ -72,14 +72,14 @@ nhej-repair-genome-analysis/
 │
 ├── README.md
 
-## 📚 References
+## References
 
 - Brissett, N. C. et al. (2020). *Ku and DNA repair in bacteria*.  
 - Parks, D. H. et al. (2020). Genome Taxonomy Database (GTDB).  
 - UniProt Consortium (2023). UniProt reference proteomes.  
 - Blum, M. et al. (2021). InterPro in 2021: improving coverage and classification.
 
-## 🚀 Reproducibility
+## Reproducibility
 All scripts, intermediate outputs, and final results are organized in this repository to ensure reproducibility of the analysis pipeline.
 
 ---
