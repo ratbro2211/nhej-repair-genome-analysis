@@ -19,12 +19,11 @@ from Bio import Phylo
 from ete3 import Tree as EteTree
 
 # -- paths -----------------------------------------------------------------
-BASE = "/app/sandbox/session_20260422_165835_2807ff049002"
-HMM_F   = f"{BASE}/user_data/hmm_subset_925.csv"
-IPR_F   = f"{BASE}/user_data/interpro_architecture_final.csv"
-PUB_F   = f"{BASE}/user_data/published_subset_925.csv"
-GTDB_F  = f"{BASE}/user_data/uniprot_proteomes_with_GTDB_R226.tsv"
-TREE_F  = f"{BASE}/data/bac120_r226.tree"
+HMM_F   = f"{BASE}/hmm_subset_925.csv"
+IPR_F   = f"{BASE}/interpro_architecture_final.csv"
+PUB_F   = f"{BASE}/published_subset_925.csv"
+GTDB_F  = f"{BASE}/uniprot_proteomes_with_GTDB_R226.tsv"
+TREE_F  = f"{BASE}/bac120_r226.tree"
 OUT_PDF = f"{BASE}/figures/phylo_heatmap.pdf"
 OUT_PNG = f"{BASE}/figures/phylo_heatmap.png"
 OUT_CSV = f"{BASE}/results/binary_matrix.csv"
