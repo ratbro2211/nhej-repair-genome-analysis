@@ -1,0 +1,12 @@
+Architecture,Published,HMM,InterPro,Diff (HMM-Published),Diff (InterPro-Published)
+No-LigD-domains,578,546,670,-32,92
+Ku-only,0,6,44,6,44
+LigD-only-all-same-prot,7,4,4,-3,-3
+LigD-only-all-diff-prot,3,3,1,0,-2
+LigD-only-lig-no-pol,94,114,0,20,-94
+LigD-only-lig-pol-diff-prot,4,4,0,0,-4
+Yes-NHEJ-all-same-prot,138,145,135,7,-3
+Yes-NHEJ-all-diff-prot,30,30,31,0,1
+Yes-NHEJ-lig-pol-diff-prot,49,50,22,1,-27
+Yes-NHEJ-lig-pol-same_prot,13,13,14,0,1
+Yes-NHEJ-lig-no-pol,9,10,3,1,-6
