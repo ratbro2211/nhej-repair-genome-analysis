@@ -3,55 +3,111 @@
 ```
 nhej-repair-genome-analysis/
 │
+├── README.md
+│   └── Project overview and documentation
+│
 ├── data/
-│   └── Raw and processed datasets
+│   ├── raw/
+│   │   └── Raw bacterial genomes from GTDB and UniProt
+│   │
+│   └── processed/
+│       └── Pre-processed and cleaned datasets
 │
 ├── scripts/
+│   │
 │   ├── hmm/
-│   │   └── HMM-based detection scripts
+│   │   ├── hmm_detection.py
+│   │   └── profile_builder.py
 │   │
 │   ├── interpro/
-│   │   └── InterProScan annotation scripts
+│   │   ├── annotation.py
+│   │   └── result_parser.py
 │   │
 │   ├── phylogeny/
-│   │   └── Phylogenetic analysis scripts
+│   │   ├── mapping.py
+│   │   └── tree_analysis.py
 │   │
 │   └── gc_analysis/
-│       └── GC content analysis scripts
+│       ├── gc_content.py
+│       └── correlation_analysis.py
 │
 ├── results/
+│   │
 │   ├── hmm_profiles/
-│   │   └── HMM profile results
+│   │   └── HMM profile definitions and outputs
 │   │
 │   ├── hmmer/
-│   │   └── HMMER output files
+│   │   └── HMMER tool result files
 │   │
 │   ├── interpro/
-│   │   └── InterPro annotation results
+│   │   └── InterPro domain detection results
 │   │
 │   ├── phylogeny/
-│   │   └── Phylogenetic analysis results
+│   │   ├── trees/
+│   │   │   └── Phylogenetic tree files
+│   │   │
+│   │   └── mappings/
+│   │       └── Phylogenetic mapping results
 │   │
 │   └── gc/
-│       └── GC content analysis results
+│       ├── distribution/
+│       │   └── GC content distribution analysis
+│       │
+│       └── correlation/
+│           └── Correlation with NHEJ repair systems
 │
 ├── figures/
-│   └── Final plots and visualizations
+│   │
+│   ├── hmm_results/
+│   │   └── HMM-based visualizations
+│   │
+│   ├── interpro_results/
+│   │   └── Domain annotation plots
+│   │
+│   ├── phylogeny_results/
+│   │   └── Phylogenetic tree visualizations
+│   │
+│   └── gc_analysis/
+│       └── GC content distribution plots
 │
 ├── notebooks/
-│   └── Jupyter notebooks (if any)
+│   │
+│   ├── 01_data_exploration.ipynb
+│   │   └── Initial data exploration and summary statistics
+│   │
+│   ├── 02_hmm_analysis.ipynb
+│   │   └── HMM detection workflow and results
+│   │
+│   ├── 03_interpro_analysis.ipynb
+│   │   └── InterPro annotation exploration
+│   │
+│   ├── 04_phylogeny_analysis.ipynb
+│   │   └── Phylogenetic mapping and analysis
+│   │
+│   └── 05_gc_correlation.ipynb
+│       └── GC content correlation analysis
 │
-├── docs/
-│   └── Supporting documentation
-│
-└── README.md
-    └── Project overview and documentation
+└── docs/
+    │
+    ├── methods.md
+    │   └── Detailed methodology documentation
+    │
+    ├── data_sources.md
+    │   └── Data source information and citations
+    │
+    ├── installation.md
+    │   └── Installation and setup instructions
+    │
+    └── results_interpretation.md
+        └── Interpretation guide for results
 ```
 
 ## Directory Descriptions
 
 ### `data/`
-Contains raw and processed datasets used in the analysis pipeline, including bacterial genomes from GTDB and UniProt.
+Contains raw and processed datasets used in the analysis pipeline:
+- **raw/**: Original bacterial genomes from GTDB and UniProt
+- **processed/**: Pre-processed and cleaned datasets ready for analysis
 
 ### `scripts/`
 Main analysis scripts organized by methodology:
@@ -65,17 +121,30 @@ Output files and analysis results organized by method:
 - **hmm_profiles/**: HMM profile definitions and outputs
 - **hmmer/**: HMMER tool results
 - **interpro/**: InterPro domain detection results
-- **phylogeny/**: Phylogenetic tree and mapping results
-- **gc/**: GC content distribution analysis results
+- **phylogeny/**: Phylogenetic tree files and mappings
+- **gc/**: GC content distribution and correlation analysis
 
 ### `figures/`
-Final publication-ready plots and visualizations.
+Final publication-ready plots and visualizations organized by analysis type:
+- **hmm_results/**: HMM-based detection visualizations
+- **interpro_results/**: Domain annotation plots
+- **phylogeny_results/**: Phylogenetic tree visualizations
+- **gc_analysis/**: GC content distribution and correlation plots
 
 ### `notebooks/`
-Jupyter notebooks for exploratory analysis and visualization.
+Jupyter notebooks for exploratory analysis and visualization:
+- `01_data_exploration.ipynb`: Initial data exploration and summary statistics
+- `02_hmm_analysis.ipynb`: HMM detection workflow and results
+- `03_interpro_analysis.ipynb`: InterPro annotation exploration
+- `04_phylogeny_analysis.ipynb`: Phylogenetic mapping and analysis
+- `05_gc_correlation.ipynb`: GC content correlation analysis
 
 ### `docs/`
-Supporting documentation, methods descriptions, and additional references.
+Supporting documentation:
+- **methods.md**: Detailed methodology documentation
+- **data_sources.md**: Data source information and citations
+- **installation.md**: Installation and setup instructions
+- **results_interpretation.md**: Interpretation guide for results
 
 ### `README.md`
 Project overview, objectives, methodology, and reproducibility information.
