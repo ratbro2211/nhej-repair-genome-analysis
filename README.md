@@ -122,22 +122,15 @@ nhej-repair-genome-analysis/
 │   └── gc_analysis/
 │       └── GC content distribution plots
 │
-├── notebooks/
-│   │
-│   ├── 01_data_exploration.ipynb
-│   │   └── Initial data exploration and summary statistics
-│   │
-│   ├── 02_hmm_analysis.ipynb
-│   │   └── HMM detection workflow and results
-│   │
-│   ├── 03_interpro_analysis.ipynb
-│   │   └── InterPro annotation exploration
-│   │
-│   ├── 04_phylogeny_analysis.ipynb
-│   │   └── Phylogenetic mapping and analysis
-│   │
-│   └── 05_gc_correlation.ipynb
-│       └── GC content correlation analysis
+│         
+│  
+│     
+│   
+│   
+│   
+│   
+│   
+│       
 │
 └── docs/
     │
@@ -183,13 +176,6 @@ nhej-repair-genome-analysis/
 - `phylogeny_results/`: Phylogenetic tree visualizations
 - `gc_analysis/`: GC content distribution and correlation plots
 
-**notebooks/**
-- Jupyter notebooks for exploratory analysis and visualization
-- `01_data_exploration.ipynb`: Initial data exploration and summary statistics
-- `02_hmm_analysis.ipynb`: HMM detection workflow and results
-- `03_interpro_analysis.ipynb`: InterPro annotation exploration
-- `04_phylogeny_analysis.ipynb`: Phylogenetic mapping and analysis
-- `05_gc_correlation.ipynb`: GC content correlation analysis
 
 **docs/**
 - Supporting documentation
